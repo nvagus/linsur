@@ -11,21 +11,19 @@ additional_rate = .17
 pay = 10
 death = 15
 survival = 10
-_class = 'A'
+p_class = 'A'
 
-if _class == 'A':
+if p_class == 'A':
     death_compensate = 200000
     survival_compensate = 50000
-elif _class == 'B':
+elif p_class == 'B':
     death_compensate = 500000
     survival_compensate = 40000
-elif _class == 'C':
+elif p_class == 'C':
     death_compensate = 1000000
     survival_compensate = 30000
 else:
     raise ValueError('Unknown Compensate Strategy')
-
-p_class = _class
 
 # client
 age = 30
