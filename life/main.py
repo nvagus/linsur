@@ -50,7 +50,7 @@ def gen_actuary_table(life_table: pandas.DataFrame):
 
 
 if __name__ == '__main__':
-    ltm, ltf = get_life_table()
+    ltf, ltm = get_life_table()
     if gender == 'F':
         lt = ltf
     elif gender == 'M':
